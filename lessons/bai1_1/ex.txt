@@ -1,0 +1,24 @@
+1. Một block chứa những thành phần nào?
+- Một danh sách các giao dịch (transactions)
+- Dấu thời gian (timestamp)
+- Một mã băm (hash) đại diện cho nội dung block đó
+- Mã băm của block trước đó (giúp tạo chuỗi liên kết giữa các block)
+2. Vì sao dữ liệu trên blockchain không thể bị sửa đổi?
+- Mỗi block chứa hash của block trước nó (previous_hash).
+- Nếu sửa dữ liệu ở block N, hash của block N sẽ thay đổi.
+- Điều này làm hash block N khác với `previous_hash` lưu trong block N+1 -> block N+1 trở nên không hợp lệ.
+- Để sửa hợp lệ, phải tính toán lại hash (PoW) cho N, N+1, ... đến block mới nhất, điều này cực kỳ tốn năng lượng/thời gian và gần như bất khả thi trên mạng lưới lớn.
+3. So sánh cách lưu lịch sử trong Git và Blockchain?
+- Giống: Đều dùng cấu trúc chuỗi/cây (Merkle tree/DAG) và hàm băm (SHA1/SHA256) để liên kết các trạng thái (commits/blocks).
+- Khác:
+  - Git: Quản lý mã nguồn. Lịch sử có thể chỉnh sửa (`git commit --amend`, `rebase`, `force push`). Tập trung hoặc phân tán nhưng quyền ghi (push) thường được kiểm soát bởi maintainer.
+  - Blockchain: Quản lý giao dịch/tài sản. Phi tập trung hoàn toàn. Lịch sử là bất biến (immutable), không thể sửa đổi sau khi đã được xác nhận (confirmed).
+4. Blockchain khác gì so với database truyền thống?
+- Quyền kiểm soát: Database tập trung (Admin có toàn quyền CRUD). Blockchain phi tập trung (Không ai có quyền tuyệt đối).
+- Thao tác: Database cho phép Sửa/Xóa (Update/Delete). Blockchain chỉ cho phép Thêm (Append-only).
+- Niềm tin: Database dựa vào niềm tin tổ chức quản lý. Blockchain dựa vào xác thực toán học và đồng thuận.
+
+5. Tại sao nói blockchain là một hệ thống không cần trung gian?
+- Sử dụng cơ chế đồng thuận (Consensus) để mạng lưới tự xác thực tính hợp lệ của giao dịch thay vì ngân hàng.
+- Sử dụng Mật mã khóa công khai (Public-key Cryptography) để xác minh chủ sở hữu tài sản.
+- Smart Contract cho phép tự động thực thi thỏa thuận mà không cần bên thứ 3 tin cậy.
