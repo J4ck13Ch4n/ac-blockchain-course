@@ -18,3 +18,8 @@ Viết một smart contract tên `VotingEligibility`:
 ## 💻 Cách chạy
 - Dán vào Remix IDE: https://remix.ethereum.org
 - Deploy, test `checkEligibility()` và `updateMinAge()`
+
+
+![alt text](image.png)
+
+![alt text](image-1.png)

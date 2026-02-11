@@ -21,3 +21,5 @@ Sau đó:
 - Tạo file `Profile.sol`, dán code vào
 - Compile và Deploy
 - Test các hàm trong Remix IDE
+
+![alt text](image.png)
