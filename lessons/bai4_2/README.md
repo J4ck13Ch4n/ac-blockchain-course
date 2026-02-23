@@ -12,3 +12,5 @@ Viết một smart contract `StudentRegistryV2` mở rộng từ bài 4.1:
 ## 💻 Cách chạy
 - Dán code vào Remix IDE: https://remix.ethereum.org
 - Deploy → Test `registerStudent()`, kiểm tra event log và kết quả đọc student.
+
+![alt text](image.png)

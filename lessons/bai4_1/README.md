@@ -16,3 +16,5 @@ Viết một smart contract tên `StudentRegistry`:
 - Dán code vào Remix IDE: https://remix.ethereum.org
 - Deploy, test lần lượt các hàm.
 - Thử gọi `register()`, `getStudent()` và `isStudentRegistered()`.
+
+![alt text](image.png)
