@@ -20,3 +20,6 @@ Viết một smart contract `Voting`:
 ## 💻 Cách chạy
 - Dán code vào Remix IDE: https://remix.ethereum.org
 - Deploy → Thêm ứng viên → Thực hiện vote → Kiểm tra event log và kết quả đếm phiếu.
+
+
+![alt text](image.png)
