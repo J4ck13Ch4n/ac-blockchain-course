@@ -38,6 +38,8 @@ Hoặc:
 ts-node run.ts bai1_1
 ```
 
+Lệnh trên có thể chạy từ thư mục gốc của dự án hoặc ngay bên trong `lessons/`.
+
 ---
 
 ### Chạy test thủ công (nếu cần):
